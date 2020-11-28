@@ -11,6 +11,11 @@ module.exports = {
     author:'Isayah Culbertson'
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`, 
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
+    
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -30,7 +35,8 @@ module.exports = {
       resolve: 'gatsby-source-contentful',
       options:{
         spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        downloadLocal: true
       }
     },
     'gatsby-plugin-sass',

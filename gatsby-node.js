@@ -30,3 +30,4 @@ module.exports.createPages = async ({ graphql, actions}) => {
     //2. Get Markdown data
     //3. Create new Pages
 }
+
