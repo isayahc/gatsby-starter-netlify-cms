@@ -8,9 +8,11 @@ module.exports = {
   /* Your site config here */
   siteMetadata:{
     title:'XayTech',
-    author:'Isayah Culbertson'
+    author:'Isayah Culbertson',
+    siteUrl: `https://www.xaytechgold.com`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
